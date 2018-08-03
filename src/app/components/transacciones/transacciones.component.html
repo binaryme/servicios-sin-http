@@ -1,0 +1,5 @@
+<div *ngFor="let transaccion of transacciones">
+  <p>{{transaccion.transaccion}}</p>
+</div>
+<input type="text" [(ngModel)]="transaccion" (keyup.enter)="postTransaccion()" />
+<!-- <button class="btn btn-primary" (click)="postTransaccion()">Crear transacción</button> -->
